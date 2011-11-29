@@ -7,7 +7,7 @@
  *
  * @author              Spir
  * @license             MIT
- * @version             0.2
+ * @version             0.2.1
  */
 
 /*
@@ -19,7 +19,7 @@
 | use_minify : set if minify is used or not
 |
 */
-$config['minify_lib_path'] 		= APPPATH.'/libraries/third_party/minify_2.1.3/lib/';
+$config['minify_lib_path'] 		= FCPATH.'app/third_party/minify_2.1.3/lib/';
 $config['use_minify']	 		= TRUE;
 $config['use_ci_cache']	 		= FALSE; // set to TRUE if you use phil's cache lib
 $config['use_min_cache']	 	= FALSE;
@@ -38,7 +38,7 @@ $config['use_min_cache']	 	= FALSE;
 |
 */
 $config['css_route_segment'] 		= 'css';
-$config['css_local_path'] 		= FCPATH.'/css/';
+$config['css_local_path'] 		= FCPATH.'css/';
 $config['css_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
 $config['css_cache_max_age'] 		= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['css_groups']			= Array(
@@ -66,7 +66,7 @@ $config['css_groups']			= Array(
 |
 */
 $config['js_route_segment'] 		= 'js';
-$config['js_local_path'] 		= FCPATH.'/js/';
+$config['js_local_path'] 		= FCPATH.'js/';
 $config['js_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
 $config['js_cache_max_age'] 		= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['js_groups']			= Array(
